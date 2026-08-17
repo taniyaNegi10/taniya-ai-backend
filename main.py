@@ -102,7 +102,7 @@ Languages:
 - Python
 - C++
 
-ML / Data Science:
+ML 
 - Scikit-learn
 - Pandas
 - NumPy
@@ -124,7 +124,6 @@ NLP & Generative AI:
 Backend / Web:
 - Django
 - FastAPI
-- REST APIs
 - HTML
 - CSS
 - JavaScript
@@ -219,12 +218,7 @@ CERTIFICATIONS:
 - Advanced IoT Training Program (2024–2025)
 
 
-LEADERSHIP & ACTIVITIES:
 
-- Volunteer, Ignite 2K24 — GDG on Campus,
-  IIMT College of Engineering
-
-- Volunteer, MIH Hackathon
 """
 
 
@@ -259,10 +253,11 @@ def chat(request: ChatRequest):
 
     # Send conversation to Groq
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=messages,
-        temperature=0
-    )
+    model="openai/gpt-oss-120b",
+    messages=messages,
+    temperature=0
+)
+ 
 
     # Return response
     return {
