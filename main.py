@@ -16,11 +16,12 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://taniya-portfolio-ai.onrender.com",
-        "http://localhost:5173",
-        "http://localhost:5174",
-        "http://localhost:5175",
-    ],
+    "https://taniya-ai.onrender.com",
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:5175",
+],
+ 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
